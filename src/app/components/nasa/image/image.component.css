@@ -1,0 +1,21 @@
+.card{
+  box-shadow: 10px 10px 9px 0px rgba(0,0,0,0.12);
+  background:  #FBD7BD;
+  border: none;
+
+}
+
+
+.text{
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+}
+a{
+  color: black;
+}
+
+img{
+  box-shadow: -1px 4px 14px 4px rgba(0,0,0,0.49);
+}

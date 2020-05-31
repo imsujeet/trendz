@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <div class="card mb-3 mt-2  align-items-center" style="width: 17rem;">
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              {{stats.countrydata[0].info.title.toUpperCase()}}
+            </h5>
+            <h6 class="card-subtitle"> COVID-19 Stats</h6>
+            <hr>
+            <table class="table table-sm table-transparent table-borderless">
+              <tr>
+                <th>Total Cases</th>
+                <td>{{stats.countrydata[0].total_cases}}</td>
+              </tr>
+              <tr>
+                <th>Total Recovered</th>
+                <td>{{stats.countrydata[0].total_recovered}}</td>
+              </tr>
+
+              <tr>
+                <th>Total Unresolved</th>
+                <td>{{stats.countrydata[0].total_unresolved}}</td>
+              </tr>
+
+              <tr>
+                <th>Total Deaths</th>
+                <td>{{stats.countrydata[0].total_deaths}}</td>
+              </tr>
+
+              <tr>
+                <th>Total New Cases Today</th>
+                <td>{{stats.countrydata[0].total_new_cases_today}}</td>
+              </tr>
+
+              <tr>
+                <th>Total New Deaths Today</th>
+                <td>{{stats.countrydata[0].total_new_deaths_today}}</td>
+              </tr>
+
+              <tr>
+                <th>Total Active Cases</th>
+                <td>{{stats.countrydata[0].total_active_cases}}</td>
+              </tr>
+
+              <tr>
+                <th>Total Serious Cases</th>
+                <td>{{stats.countrydata[0].total_serious_cases}}</td>
+              </tr>
+
+              <tr>
+                <th>Total Danger Rank</th>
+                <td>{{stats.countrydata[0].total_danger_rank}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+</div>
