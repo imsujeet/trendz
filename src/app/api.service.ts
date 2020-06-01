@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { ResponseData } from './components/news/ResponseData';
 import {WeatherResponse} from './components/weather/weatherResponse';
 import { CoronaResponse } from './components/corona/CoronaResponse';
+import { Observable } from 'rxjs';
 
 
 
@@ -10,6 +11,7 @@ import { CoronaResponse } from './components/corona/CoronaResponse';
   providedIn: 'root'
 })
 export class APIService {
+  public isLoading;
   private url = 'http://hn.algolia.com/api/v1/search?tags=front_page';
   private lat;
   private lon;
@@ -23,7 +25,7 @@ export class APIService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getNewsFeed() {
+  public getNewsFeed(): Observable<ResponseData> {
     return this.httpClient.get<ResponseData>(this.url);
   }
 

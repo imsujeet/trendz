@@ -13,6 +13,10 @@ import { NasaComponent } from './components/nasa/nasa.component';
 import { ImageComponent } from './components/nasa/image/image.component';
 import { CoronaComponent } from './components/corona/corona.component';
 import { CreportComponent } from './components/corona/creport/creport.component';
+import { HomeComponent } from './home/home.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
+import { SpinnerComponent } from './spinner/spinner.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { CreportComponent } from './components/corona/creport/creport.component'
     NasaComponent,
     ImageComponent,
     CoronaComponent,
-    CreportComponent
+    CreportComponent,
+    HomeComponent,
+    NotfoundComponent,
+    SpinnerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

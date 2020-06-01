@@ -5,9 +5,8 @@ export interface Hit {
   author: string;
 }
 
-export interface RootResponse {
+export interface ResponseData {
   hits: Hit[];
 }
 
-export interface ResponseData extends RootResponse, Hit {
-}
+

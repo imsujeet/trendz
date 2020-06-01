@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Hit } from '../ResponseData';
+import { ResponseData } from '../ResponseData';
 
 @Component({
   selector: 'app-posts',
@@ -7,7 +7,7 @@ import { Hit } from '../ResponseData';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
-  @Input() data: Hit[] = [];
+  @Input() data: ResponseData;
   @Input() pointer;
 
   constructor() { }

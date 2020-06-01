@@ -1,0 +1,31 @@
+<div *ngIf = "isLoading">
+  <app-spinner></app-spinner>
+</div>
+<div class="container" [hidden]="isLoading" style="font-family: 'Roboto', sans-serif;">
+  <div class="row">
+    <div class="col-md-3 weather" >
+      <div class="row d-flex justify-content-center" style="position: sticky; top:50px">
+        <app-weather></app-weather>
+      </div>
+      <div class="row d-flex justify-content-center" style="position: sticky; top:500px">
+        <app-nasa></app-nasa>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <app-news></app-news>
+
+      </div>
+    </div>
+    <div class="col-md-3 corona">
+      <div class="row" style="position: sticky; top:50px">
+        <app-corona></app-corona>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<div [hidden]="isLoading">
+  <app-footer></app-footer>
+</div>
