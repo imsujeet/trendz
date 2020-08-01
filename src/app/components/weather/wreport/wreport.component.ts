@@ -7,12 +7,13 @@ import { WeatherResponse } from '../weatherResponse';
   styleUrls: ['./wreport.component.css']
 })
 export class WreportComponent implements OnInit {
-  @Input() weatherData: WeatherResponse;
+  @Input() weatherData;
 
 
   constructor() { }
 
   ngOnInit() {
+    console.log('Type from wrepoet', this.weatherData);
   }
 
 }

@@ -7,12 +7,12 @@ import { APIService } from 'src/app/api.service';
   styleUrls: ['./nasa.component.css']
 })
 export class NasaComponent implements OnInit {
-  imageData: any;
+  imageData: any[];
 
   constructor(private apiService: APIService) { }
 
   ngOnInit() {
-    this.apiService.getImageoftheDay().subscribe(response => {
+    this.apiService.getImageoftheDay().subscribe((response: any) => {
       this.imageData = response;
     });
   }

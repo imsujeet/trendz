@@ -8,14 +8,14 @@ import { WeatherResponse } from './weatherResponse';
   styleUrls: ['./weather.component.css']
 })
 export class WeatherComponent implements OnInit {
-  weatherdata: WeatherResponse;
+  weatherdata: any = {};
 
 
   constructor(private apiService: APIService) { }
 
   ngOnInit() {
     navigator.geolocation.getCurrentPosition( location => {
-      this.apiService.getWeather(location.coords.latitude, location.coords.longitude).subscribe( response => {
+      this.apiService.getWeather(location.coords.latitude, location.coords.longitude).subscribe( (response: any) => {
         this.weatherdata = response;
       });
     });

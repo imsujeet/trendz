@@ -3,36 +3,36 @@
     <div class="col-md-12">
         <div class="card mb-3 mt-2  align-items-center">
           <div class="card-body text-center">
-            <h5 class="card-title">{{weatherData.name}}</h5>
+            <h5 class="card-title">{{weatherData['name']}}</h5>
             <hr>
             <table class="table table-sm table-transparent table-borderless">
               <tr>
                 <th>Temp</th>
-                <td>{{weatherData.main.temp}}</td>
+                <td>{{weatherData['main']['temp']}}</td>
               </tr>
               <tr>
                 <th>Feels like</th>
-                <td>{{weatherData.main.feels_like}}</td>
+                <td>{{weatherData['main']['feels_like']}}</td>
               </tr>
 
               <tr>
                 <th>Humidity</th>
-                <td>{{weatherData.main.humidity}}</td>
+                <td>{{weatherData['main']['humidity']}}</td>
               </tr>
 
               <tr>
                 <th>Pressure</th>
-                <td>{{weatherData.main.pressure}}</td>
+                <td>{{weatherData['main']['pressure']}}</td>
               </tr>
 
               <tr>
                 <th>Min Temp</th>
-                <td>{{weatherData.main.temp_min}}</td>
+                <td>{{weatherData['main']['temp_min']}}</td>
               </tr>
 
               <tr>
                 <th>Max Temp</th>
-                <td>{{weatherData.main.temp_max}}</td>
+                <td>{{weatherData['main']['temp_max']}}</td>
               </tr>
             </table>
           </div>

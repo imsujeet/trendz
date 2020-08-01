@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 })
 export class APIService {
   public isLoading;
-  private url = 'http://hn.algolia.com/api/v1/search?tags=front_page';
+  private url = 'https://hn.algolia.com/api/v1/search?tags=front_page';
   private lat;
   private lon;
   private nasaURL = 'https://api.nasa.gov/planetary/apod?api_key=TVnIB3QOB7pbIRKqhVuISsKxf2mCEAGH76CuJBPL';
@@ -34,7 +34,7 @@ export class APIService {
   }
 
   public getWeather(lat, lon) {
-    return this.httpClient.get<WeatherResponse>(
+    return this.httpClient.get<any>(
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=336b9f498f96bba34dcc054d07d542ed`
     );
   }
